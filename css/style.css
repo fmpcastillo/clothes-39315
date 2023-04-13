@@ -104,10 +104,16 @@ main {
 }
 
 /**************productos**************/
+.contenedor-carrito {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
 .imagen-producto {
     max-width: 100% ;
 }
 .contenedor-productos {
+    overflow: hidden;
     display: grid;
     grid-template-columns: repeat(4,1fr);
     gap: 3rem;
@@ -125,15 +131,9 @@ main {
 }
 .titulo-producto {
     
-
-    
-
 }
 .precio {
    
-
-
-
 }
 .boton-agregar{
     border: 0;
@@ -153,24 +153,27 @@ main {
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    padding: 2rem;
+    padding: 2rem;    
 }
+
 .carrito-productos {
     display: flex;
     flex-direction: column;
     gap: 1rem;
 }
+
 .carrito-producto-compra {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: lightgrey;
+    background-color: rgb(243, 243, 243);
     padding: .5rem;
-    border: 0;
-    
+    border:0;  
 }
+
 .imagen-carrito-producto{
-    max-width: 100%;
+    max-width: 6rem;
+    padding-left: 1rem;
 }
 .carrito-producto-nombre {
     text-transform: capitalize;
@@ -179,27 +182,40 @@ main {
     display: flex;
     justify-content: space-between;
 }
-.carrito-accion-vaciar {
-    text-transform: uppercase;
-
+.boton-producto-eliminar {
+    cursor: pointer;
+    background-color: black;
+    color: snow; 
+    border: 0;
+    padding: .5rem;   
 }
+
 .carrito-derecha {
     display: flex;
     gap: 1rem;
 }
-
-.carrito-accion-comprar {
+.precio-total {
     display: flex;
-    text-transform: uppercase;
-    gap: .5rem;
-    
+}
+.carrito-accion-comprar {
+    display: flex;    
+}
+
+.boton-accion-vaciar{
+    cursor: pointer;
+    background-color: black;
+    color: snow; 
+    border: 0;
+    padding: .5rem;
+
 }
 
 .boton-accion-comprar {
-   
     cursor: pointer;
-    text-transform: uppercase; 
-    
+    background-color: black;
+    color: snow; 
+    border: 0;
+    padding: .5rem;
 }
 /*************registrarme************************/
 .titulo-form{
