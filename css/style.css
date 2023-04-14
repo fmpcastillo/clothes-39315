@@ -217,7 +217,7 @@ main {
     border: 0;
     padding: .5rem;
 }
-/*************registrarme************************/
+/*********************contato************************/
 .titulo-form{
     position: relative;
     left: 2rem;
@@ -228,11 +228,75 @@ main {
 .contenedor-formulario {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    margin: 0.5rem;
+    padding: 3rem;
+    border: 2px ;
+    border-style:  solid;
+
 }
-input {
+
+
+.contenedor-formulario-contacto {
     display: flex;
     flex-direction: column;
-    padding-right: 6rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    gap: 1rem;
 }
-/*********remeras pantalones*/
+
+.intro-mensaje  {
+    display:flex;
+    flex-direction: column;
+}
+.dejar-mensaje {
+    text-align: center;
+}
+.boton-enviar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 1rem;
+    
+}
+/*****************registro**********************/
+.formulario{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.mail {
+    display: flex;
+    gap: 1rem;
+}
+
+.intro-nombre {
+    display:flex;
+    flex-direction: column;
+}
+
+.intro-telefono {
+    display:flex;
+    flex-direction: column;
+}
+.intro-mail {
+    display:flex;
+    flex-direction: column;
+}
+
+.intro-mensaje input {
+    padding: 3rem;
+}
+.boton-registrarme {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 1rem;
+
+}
+
+.intro-contraseña {
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+
+}
