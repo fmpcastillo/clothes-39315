@@ -7,22 +7,36 @@
 
 
 /**********header*************/
+.hambar {
+    display: none;
+}
 .contenedor-header {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    
 
 }
 .contenedor-logo {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    padding-left: 3rem;
+    margin: 0;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+
+}
+.contenedor-barra ul { /*modificar contenedor para responsive*/ 
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: .5rem;
+    padding-left: 8rem;
     
 }
-.contenedor-barra ul {
-   list-style: none;
-   width: 100%;
-}
+
+
 
 li a {
     text-decoration: none;
@@ -31,38 +45,34 @@ li a {
 }
 
 .contenedor-menu  {
-    position: relative;
-    top: 4.5rem;
-    right: 2.5rem;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
+  
 }
-
 .contenedor-registro-carrito {
-    padding-right: 4rem;
-    display: flex;
-    align-items: end;
     
+    padding-right: 8rem;
+    display: flex;
     gap: 2rem;
 }
 
 .iconos {
     color: black;
-    font-size: 2rem;
+    font-size: 20px;
+}
+.numerito {
+    font-size: 12px;
 }
 
  /*********************main**********************/
 main {
     padding: 2rem;
-    
+    background-color: rgb(240, 240, 240);
     
 }
 .titulo {
     text-transform:capitalize; 
     font-size: 24px;
 }   
-.contenedor-carrusel {
+.contenedor-carrusel {  
     padding-top: 3rem;
     display: flex;
     justify-content: center;
@@ -72,11 +82,15 @@ main {
 
 
 /******************footer*****************/
+
 .contenedor-footer {
     padding-top: 2rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center;
+    
+    height: 8rem;
 }
 .contenedor-contacto a{
     text-decoration: none;
@@ -94,13 +108,19 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: .5rem;
+    gap: 5px;
 }
 
 .contenedor-face-insta {
+ 
     padding-right: 4rem;
     display: flex;
+
     gap: 2rem;
+}
+.iconos-footer{
+    color: black;
+    font-size: 20px;
 }
 
 /**************productos**************/
@@ -166,7 +186,7 @@ main {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(243, 243, 243);
+    background-color: rgb(220, 220, 220);
     padding: .5rem;
     border:0;  
 }
@@ -179,6 +199,7 @@ main {
     text-transform: capitalize;
 }
 .carrito-acciones {
+    padding-top: 3rem;
     display: flex;
     justify-content: space-between;
 }
@@ -234,7 +255,6 @@ main {
     border-style:  solid;
 
 }
-
 
 .contenedor-formulario-contacto {
     display: flex;
@@ -298,5 +318,160 @@ main {
     display: flex;
     flex-direction:column;
     justify-content: center;
+
+}
+/*@media (max-width: 1024px) and  (min-width: px) {
+
+
+   .contenedor-productos {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+   }
+
+}*/
+@media (max-width: 800px) and (min-width: 768px) {
+    .contenedor-barra ul {
+    position: relative;
+    padding-left: 3rem;
+  }
+  .contenedor-registro-carrito {
+    position: relative;
+    padding-right: 3rem;
+  }
+  footer{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box ;
+   }
+   .contenedor-contacto {
+    padding-left: 1rem;
+    }
+    .contenedor-encontranos {
+        padding-bottom: 1rem;
+    }
+    .contenedor-face-insta {
+        padding-right: 1rem;
+    }
+}
+
+@media (max-width: 767px) and (min-width: 601px) {
+
+    .contenedor-barra ul {
+        position: relative;
+        padding-left: 2rem;
+      }
+      .contenedor-registro-carrito {
+        position: relative;
+        padding-right: 3rem;
+      }
+
+      /*productos*/
+      .contenedor-productos {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+       }
+       footer{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box ;
+       }
+       .contenedor-contacto {
+        padding-left: 1rem;
+        }
+        .contenedor-encontranos {
+            padding-bottom: 1rem;
+        }
+        .contenedor-face-insta {
+            padding-right: 1rem;
+        }
+
+
+}
+@media (max-width: 600px) and (min-width: 481px){
+    .contenedor-barra ul {
+        position: relative;
+        padding-left: 2rem;
+      }
+      .contenedor-registro-carrito {
+        position: relative;
+        padding-right: 3rem;
+      }
+      li{
+        font-size: 14px;
+      }
+   
+   
+     
+      /*productos*/
+      .contenedor-productos {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+       }
+       footer{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box ;
+       }
+       .contenedor-contacto {
+        padding-left: 1rem;
+        }
+        .contenedor-encontranos {
+            padding-bottom: 1rem;
+        }
+        .contenedor-face-insta {
+            padding-right: 1rem;
+        }
+
+
+}
+@media (max-width: 480px) and (min-width: 320px){
+  
+    .hambar {
+        display:inline;
+    }
+    .contenedor-barra { 
+        display: none;
+    }
+    .contenedor-registro-carrito{
+        display: none;
+    }
+
+    /*.contenedor-barra ul {
+        position: relative;
+        padding-left: 2rem;
+      }*/
+      .contenedor-registro-carrito {
+        position: relative;
+        padding-right: 3rem;
+      }
+      li{
+        font-size: 14px;
+      }
+   
+   
+      /*produtos*/
+      .contenedor-productos {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+       }
+
+       footer{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box ;
+       }
+       .contenedor-contacto {
+        padding-left: 1rem;
+        }
+        .contenedor-encontranos {
+            padding-bottom: 1rem;
+        }
+        .contenedor-face-insta {
+            padding-right: 1rem;
+        }
+        .contenedor-formulario-contacto {
+            padding-left: 2rem;
+            
+        }       
 
 }
