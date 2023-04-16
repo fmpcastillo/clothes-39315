@@ -1,0 +1,41 @@
+.contenedor-logo{
+    margin: 0%;
+    padding: 1rem;
+    @include flex (none, center, none, none, none);
+  
+}
+.hambar {
+    display: none;
+}
+
+.contenedor-header{
+    @include flex (none,space-between,none, none, none);  
+}
+
+.contenedor-menu{
+    @include flex (row,none,none, .5rem, none);
+    padding-left: 4rem;
+    li{
+        list-style: none; 
+        a{
+            text-decoration: none;
+            text-transform: capitalize;
+            color: black;
+            &:hover{
+                background-color: black;
+                color: rgb(240, 240, 240);
+            }
+        }
+    }
+}
+.contenedor-registro-carrito {
+    padding-right: 4rem; 
+    @include flex (row, none, none, 2rem, none);
+    .iconos{
+        color: black;
+        font-size: 20px;
+   }
+}
+.numerito{
+    font-size: 12px;
+}

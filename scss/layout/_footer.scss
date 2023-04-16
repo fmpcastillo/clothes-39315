@@ -1,0 +1,30 @@
+.contenedor-footer {
+    padding-top:2rem;
+    height: 8rem;
+   
+    @include flex (none,space-between,none, none, wrap);
+
+    div{
+        
+        a{
+            color: black;
+            text-decoration: none;
+            text-transform: capitalize;
+        }
+    }      
+}
+.contenedor-contacto {
+    padding-top: 1.5rem;
+    padding-left: 4rem;
+}
+.contenedor-encontranos {
+    @include flex (column,none, center, 5px, none);        
+}
+.contenedor-face-insta {
+    padding-top: 1.5rem;
+    padding-right: 4rem;
+    @include flex (row, none ,none, 2rem, none);
+    a{
+        font-size: 20px;
+    }
+}

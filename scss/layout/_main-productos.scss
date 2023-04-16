@@ -1,0 +1,27 @@
+
+p {
+    text-transform: capitalize;
+}
+main{
+    background-color: rgb(240, 240, 240);
+    padding: 2rem;
+}
+.contenedor-productos {
+    overflow: hidden;
+    @include grid (repeat(4,1fr), 3rem);
+    div {
+        img {
+            max-width: 100%;          
+        }
+    }   
+}
+.producto-descripcion {
+    background-color: #d8d8d8;
+    padding: .5rem;
+    margin: 0rem;
+    position:relative;
+    display: flex;
+    flex-direction: column;
+    gap: rem;
+    text-transform: uppercase;
+}
