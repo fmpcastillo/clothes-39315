@@ -1,4 +1,6 @@
+@import "./utilities/varieable";
 @import "./utilities/mixins";
+@import "./components/bootstrap";
 @import "./base/reset.scss";
 @import "./components/botones";
 @import "./layout/header";
@@ -7,4 +9,16 @@
 @import "./layout/main-productos";
 @import "./layout/carrito";
 @import "./layout/registrarme";
-@import "./layout/contacto"
+@import "./layout/contacto";
+@import "./layout/media768";
+@import "./layout/media600";
+@import "./layout/media480";
+@import "./layout/media320";
+
+
+
+
+
+
+
+

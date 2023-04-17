@@ -1,24 +1,26 @@
-.contenedor-footer {
-    padding-top:2rem;
-    height: 8rem;
-   
-    @include flex (none,space-between,none, none, wrap);
 
-    div{
-        
+.contenedor-footer {
+    background-color: black;
+    padding-top:2rem;  
+    @include flex (none,space-between,none, none, wrap);
+    div{ 
         a{
-            color: black;
+            color:snow;
             text-decoration: none;
             text-transform: capitalize;
         }
     }      
 }
 .contenedor-contacto {
-    padding-top: 1.5rem;
+    padding-top: 1.8rem;
     padding-left: 4rem;
 }
+
 .contenedor-encontranos {
-    @include flex (column,none, center, 5px, none);        
+    @include flex (column,none, center, 5px, none);
+    p{
+        color:snow;
+    }        
 }
 .contenedor-face-insta {
     padding-top: 1.5rem;

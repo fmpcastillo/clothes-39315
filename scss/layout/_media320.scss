@@ -1,0 +1,46 @@
+@media (max-width: 480px) and (min-width: 320px){
+  
+    .hambar {
+        display:inline;
+    }
+    .contenedor-barra { 
+        display: none;
+    }
+    .contenedor-registro-carrito{
+        display: none;
+    }
+      .contenedor-registro-carrito {
+        position: relative;
+        padding-right: 3rem;
+      }
+      li{
+        font-size: 14px;
+      }
+   
+   
+      /*produtos*/
+      .contenedor-productos {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+       }
+
+       footer{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box ;
+       }
+       .contenedor-contacto {
+        padding-left: 1rem;
+        }
+        .contenedor-encontranos {
+            padding-bottom: 1rem;
+        }
+        .contenedor-face-insta {
+            padding-right: 1rem;
+        }
+        .contenedor-formulario-contacto {
+            padding-left: 2rem;
+            
+        }
+      
+}

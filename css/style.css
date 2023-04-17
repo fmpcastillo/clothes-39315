@@ -1,3 +1,13 @@
+@charset "UTF-8";
+#car .carousel-inner .carousel-item {
+  background-color: #1E1E1E;
+  /*width: 100%; // Cambia este valor al ancho deseado
+        height: 500px; // Cambia este valor a la altura deseada */
+  border-radius: 1rem; }
+
+#navbarNav li a {
+  color: snow; }
+
 * {
   margin: 0%;
   padding: 0%;
@@ -5,21 +15,39 @@
   font-family: sans-serif; }
 
 .boton-agregar {
-  border: 0;
-  background-color: cornsilk;
+  background-color: black;
   text-transform: uppercase;
   padding: 0rem;
   margin: 0rem;
   cursor: pointer;
-  border: solid snow; }
-
-.boton-agregar:hover {
-  background-color: black;
   color: snow; }
 
+.boton-agregar:hover {
+  background-color: snow;
+  color: black;
+  border: 1px solid #a1a1a1;
+  transition: all 400ms ease; }
+
+.boton-producto-eliminar {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  background-color: black;
+  text-transform: uppercase;
+  margin: 0rem;
+  cursor: pointer;
+  color: snow; }
+
+.boton-producto-eliminar:hover {
+  background-color: snow;
+  color: black;
+  border: 1px solid #a1a1a1;
+  transition: all 400ms ease; }
+
 .contenedor-logo {
+  background-color: black;
+  color: aliceblue;
   margin: 0%;
-  padding: 1rem;
+  padding-top: 2rem;
   display: flex;
   flex-direction: none;
   justify-content: center;
@@ -36,7 +64,8 @@
   justify-content: space-between;
   align-items: none;
   gap: none;
-  flex-wrap: none; }
+  flex-wrap: none;
+  background-color: black; }
 
 .contenedor-menu {
   display: flex;
@@ -45,18 +74,20 @@
   align-items: none;
   gap: 0.5rem;
   flex-wrap: none;
+  padding-top: .8rem;
   padding-left: 4rem; }
   .contenedor-menu li {
     list-style: none; }
     .contenedor-menu li a {
       text-decoration: none;
       text-transform: capitalize;
-      color: black; }
+      color: snow; }
       .contenedor-menu li a:hover {
-        background-color: black;
-        color: #f0f0f0; }
+        background-color: snow;
+        color: black; }
 
 .contenedor-registro-carrito {
+  padding-top: .7rem;
   padding-right: 4rem;
   display: flex;
   flex-direction: row;
@@ -65,15 +96,20 @@
   gap: 2rem;
   flex-wrap: none; }
   .contenedor-registro-carrito .iconos {
-    color: black;
+    color: snow;
     font-size: 20px; }
 
 .numerito {
+  color: snow;
   font-size: 12px; }
 
+main {
+  width: 100%;
+  min-height: 100vh; }
+
 .contenedor-footer {
+  background-color: black;
   padding-top: 2rem;
-  height: 8rem;
   display: flex;
   flex-direction: none;
   justify-content: space-between;
@@ -81,12 +117,12 @@
   gap: none;
   flex-wrap: wrap; }
   .contenedor-footer div a {
-    color: black;
+    color: snow;
     text-decoration: none;
     text-transform: capitalize; }
 
 .contenedor-contacto {
-  padding-top: 1.5rem;
+  padding-top: 1.8rem;
   padding-left: 4rem; }
 
 .contenedor-encontranos {
@@ -96,6 +132,8 @@
   align-items: center;
   gap: 5px;
   flex-wrap: none; }
+  .contenedor-encontranos p {
+    color: snow; }
 
 .contenedor-face-insta {
   padding-top: 1.5rem;
@@ -113,26 +151,32 @@ p {
   text-transform: capitalize; }
 
 main {
-  background-color: #f0f0f0;
+  background-color: white;
   padding: 2rem; }
 
 .contenedor-productos {
+  margin: 4rem;
   overflow: hidden;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 3rem; }
+  gap: 4rem; }
   .contenedor-productos div img {
     max-width: 100%; }
 
 .producto-descripcion {
-  background-color: #d8d8d8;
   padding: .5rem;
   margin: 0rem;
   position: relative;
   display: flex;
   flex-direction: column;
-  gap: rem;
   text-transform: uppercase; }
+
+.producto:hover {
+  background-position: center;
+  padding: .5rem;
+  cursor: pointer;
+  border: 2px solid rgba(190, 190, 190, 0.847);
+  transition: all 200ms ease; }
 
 .contenedor-carrito {
   display: flex;
@@ -155,6 +199,27 @@ main {
   .carrito-producto-compra img {
     max-width: 6rem;
     padding-left: 1rem; }
+
+.contenedor-formulario {
+  padding-left: 3rem;
+  padding-right: 3rem; }
+
+.intro-contraseña {
+  display: flex;
+  flex-direction: column;
+  justify-content: none;
+  align-items: none;
+  gap: none;
+  flex-wrap: none; }
+
+.boton-registrarme {
+  padding-top: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: none;
+  gap: none;
+  flex-wrap: none; }
 
 .contenedor-formulario-contacto {
   padding-left: 3rem;
@@ -219,3 +284,96 @@ main {
   gap: none;
   flex-wrap: none;
   padding-top: 1rem; }
+
+@media (max-width: 800px) and (min-width: 768px) {
+  .contenedor-barra ul {
+    position: relative;
+    padding-left: 3rem; }
+  .contenedor-registro-carrito {
+    position: relative;
+    padding-right: 3rem; }
+  footer {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; }
+  .contenedor-contacto {
+    padding-left: 1rem; }
+  .contenedor-encontranos {
+    padding-bottom: 1rem; }
+  .contenedor-face-insta {
+    padding-right: 1rem; } }
+
+@media (max-width: 767px) and (min-width: 601px) {
+  .contenedor-barra ul {
+    position: relative;
+    padding-left: 2rem; }
+  .contenedor-registro-carrito {
+    position: relative;
+    padding-right: 3rem; }
+  /*productos*/
+  .contenedor-productos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); }
+  footer {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; }
+  .contenedor-contacto {
+    padding-left: 1rem; }
+  .contenedor-encontranos {
+    padding-bottom: 1rem; }
+  .contenedor-face-insta {
+    padding-right: 1rem; } }
+
+@media (max-width: 600px) and (min-width: 481px) {
+  .contenedor-barra ul {
+    position: relative;
+    padding-left: 2rem; }
+  .contenedor-registro-carrito {
+    position: relative;
+    padding-right: 3rem; }
+  li {
+    font-size: 14px; }
+  /*productos*/
+  .contenedor-productos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); }
+  footer {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; }
+  .contenedor-contacto {
+    padding-left: 1rem; }
+  .contenedor-encontranos {
+    padding-bottom: 1rem; }
+  .contenedor-face-insta {
+    padding-right: 1rem; } }
+
+@media (max-width: 480px) and (min-width: 320px) {
+  .hambar {
+    display: inline; }
+  .contenedor-barra {
+    display: none; }
+  .contenedor-registro-carrito {
+    display: none; }
+  .contenedor-registro-carrito {
+    position: relative;
+    padding-right: 3rem; }
+  li {
+    font-size: 14px; }
+  /*produtos*/
+  .contenedor-productos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); }
+  footer {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; }
+  .contenedor-contacto {
+    padding-left: 1rem; }
+  .contenedor-encontranos {
+    padding-bottom: 1rem; }
+  .contenedor-face-insta {
+    padding-right: 1rem; }
+  .contenedor-formulario-contacto {
+    padding-left: 2rem; } }

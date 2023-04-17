@@ -1,0 +1,37 @@
+@media (max-width: 600px) and (min-width: 481px){
+    .contenedor-barra ul {
+        position: relative;
+        padding-left: 2rem;
+      }
+      .contenedor-registro-carrito {
+        position: relative;
+        padding-right: 3rem;
+      }
+      li{
+        font-size: 14px;
+      }
+   
+   
+     
+      /*productos*/
+      .contenedor-productos {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+       }
+       footer{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box ;
+       }
+       .contenedor-contacto {
+        padding-left: 1rem;
+        }
+        .contenedor-encontranos {
+            padding-bottom: 1rem;
+        }
+        .contenedor-face-insta {
+            padding-right: 1rem;
+        }
+
+
+}

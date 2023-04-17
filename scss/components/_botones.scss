@@ -1,13 +1,29 @@
-.boton-agregar{
-    border: 0;
-    background-color: cornsilk;
+.boton-agregar {
+    background-color: black;
     text-transform: uppercase;
     padding: 0rem;
     margin: 0rem;
     cursor: pointer;
-    border: solid snow;
+    color: snow;
 }
 .boton-agregar:hover {
+    background-color: snow;
+    color: black;
+    border: 1px solid rgb(161, 161, 161);
+    transition: all 400ms ease;
+}
+.boton-producto-eliminar {
+    padding-left: 1rem ;
+    padding-right: 1rem;
     background-color: black;
+    text-transform: uppercase;
+    margin: 0rem;
+    cursor: pointer;
     color: snow;
+}
+.boton-producto-eliminar:hover {
+    background-color: snow;
+    color: black;
+    border: 1px solid rgb(161, 161, 161);
+    transition: all 400ms ease;
 }

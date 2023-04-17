@@ -3,12 +3,13 @@ p {
     text-transform: capitalize;
 }
 main{
-    background-color: rgb(240, 240, 240);
+    background-color: white;
     padding: 2rem;
 }
 .contenedor-productos {
+    margin: 4rem;
     overflow: hidden;
-    @include grid (repeat(4,1fr), 3rem);
+    @include grid (repeat(4,1fr), 4rem);
     div {
         img {
             max-width: 100%;          
@@ -16,12 +17,17 @@ main{
     }   
 }
 .producto-descripcion {
-    background-color: #d8d8d8;
     padding: .5rem;
     margin: 0rem;
     position:relative;
     display: flex;
     flex-direction: column;
-    gap: rem;
     text-transform: uppercase;
+}
+.producto:hover {
+    background-position: center;
+    padding: .5rem;
+    cursor: pointer;  
+    border: 2px solid rgba(190, 190, 190, 0.847);
+    transition: all 200ms ease;      
 }
