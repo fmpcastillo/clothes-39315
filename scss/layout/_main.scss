@@ -2,3 +2,41 @@ main {
     width: 100%;
     min-height: 100vh;
 }
+.contenedor-info-animacion{
+   background-color: black;
+    margin: 0;
+    padding-top: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    p{
+        color: snow;
+    }
+}
+.contenedor-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    padding-left: 3rem; 
+    line-height: 1rem;
+}
+.contenedor-animaciones {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 1rem;
+}
+.imagen{
+    height: 350px;
+    width: 500px;
+    animation: rotar 5s linear infinite;
+}
+@keyframes rotar {
+    from{
+        transform: rotateY(180deg);
+    }
+    to{
+        transform: rotateY(-180deg)
+    }
+    
+}

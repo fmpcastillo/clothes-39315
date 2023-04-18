@@ -8,7 +8,22 @@
         position: relative;
         padding-right: 3rem;
       }
+      /*main*/
+      .contenedor-info-animacion {
+        margin: 0%;
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
 
+      }
+      .contenedor-info {
+        padding: 0;
+
+      }
+      .contenedor-animaciones{
+        padding-left: 3rem;
+      }  
       /*productos*/
       .contenedor-productos {
         display: grid;

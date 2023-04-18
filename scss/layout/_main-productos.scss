@@ -7,9 +7,9 @@ main{
     padding: 2rem;
 }
 .contenedor-productos {
-    margin: 4rem;
+    margin: 1rem;
     overflow: hidden;
-    @include grid (repeat(4,1fr), 4rem);
+    @include grid (repeat(4,1fr), 3rem);
     div {
         img {
             max-width: 100%;          
