@@ -27,3 +27,9 @@
     border: 1px solid rgb(161, 161, 161);
     transition: all 400ms ease;
 }
+.boton-accion-vaciar {
+    @extend .boton-producto-eliminar;
+}
+.boton-accion-comprar {
+    @extend .boton-producto-eliminar;
+}

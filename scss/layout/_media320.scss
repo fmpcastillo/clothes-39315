@@ -60,5 +60,20 @@
         padding-left: 2rem;
         
     }
+    .carrito-producto-compra {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        background-color: rgb(220, 220, 220);
+        padding: 1rem;
+        padding-right: 2rem;
+        border:0;
+        img{
+            max-width: 6rem;
+            padding-left: 1rem;
+        }
+    
+    }
       
 }

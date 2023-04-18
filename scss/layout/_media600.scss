@@ -7,6 +7,7 @@
         position: relative;
         padding-right: 3rem;
     }
+    
     /*main*/
     .contenedor-info-animacion {
         @include flex (column, none, none, 2rem, none);
@@ -37,4 +38,5 @@
     .contenedor-face-insta {
         padding-right: 1rem;
     }
+
 }
