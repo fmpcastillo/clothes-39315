@@ -3,27 +3,21 @@ main {
     min-height: 100vh;
 }
 .contenedor-info-animacion{
-   background-color: black;
+    @include grid (1fr 1fr,none);
+    background-color: black;
     margin: 0;
     padding-top: 2rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
     p{
         color: snow;
     }
 }
 .contenedor-info{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    
+    @include flex (column,center,none,none,none);
     padding-left: 3rem; 
     line-height: 1rem;
 }
 .contenedor-animaciones {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex (row,center,center,none,none);
     padding-bottom: 1rem;
 }
 .imagen{
@@ -31,7 +25,7 @@ main {
     width: 500px;
     animation: rotar 5s linear infinite;
 }
-@keyframes rotar {
+@keyframes rotar { /*regla que define el comportamiento de la animacion*/
     from{
         transform: rotateY(180deg);
     }

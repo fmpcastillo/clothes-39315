@@ -9,60 +9,56 @@
     .contenedor-registro-carrito{
         display: none;
     }
-      .contenedor-registro-carrito {
+    .contenedor-registro-carrito {
         position: relative;
         padding-right: 3rem;
-      }
-      li{
+    }
+    li{
         font-size: 14px;
-      }
+    }
       /*main*/
-      .contenedor-info-animacion{
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
+    .contenedor-info-animacion {
+        @include flex (column, none, none, 1rem, none); 
         padding: 1rem;
-      }
-      .contenedor-info {
-          margin-top: 20px;
-          padding: 0px;
-      }
-      p{
+    }
+    .contenedor-info {
+        margin-top: 20px;
+        padding: 0px;
+    }
+    p{
         font-size: 14px;
         line-height: 1rem;
-      }
-      .imagen{
+    }
+    .imagen{
         height: 150px;
         width: 300px;
-      }
-      .contenedor-animaciones {
+    }
+    .contenedor-animaciones {
         padding: 0;
-      }
-   
-   
-      /*produtos*/
-      .contenedor-productos {
+    }
+         /*produtos*/
+    .contenedor-productos {
         display: grid;
         grid-template-columns: repeat(2,1fr);
-       }
+    }
 
-       footer{
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box ;
-       }
-       .contenedor-contacto {
+    footer {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box ;
+    }
+    .contenedor-contacto {
         padding-left: 1rem;
-        }
-        .contenedor-encontranos {
-            padding-bottom: 1rem;
-        }
-        .contenedor-face-insta {
-            padding-right: 1rem;
-        }
-        .contenedor-formulario-contacto {
-            padding-left: 2rem;
-            
-        }
+    }
+    .contenedor-encontranos {
+        padding-bottom: 1rem;
+    }
+    .contenedor-face-insta {
+        padding-right: 1rem;
+    }
+    .contenedor-formulario-contacto {
+        padding-left: 2rem;
+        
+    }
       
 }

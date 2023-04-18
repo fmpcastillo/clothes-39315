@@ -1,43 +1,37 @@
 @media (max-width: 800px) and (min-width: 768px) {
     .contenedor-barra ul {
-    position: relative;
-    padding-left: 3rem;
-  }
-  .contenedor-registro-carrito {
-    position: relative;
-    padding-right: 3rem;
-  }
-  /*main*/
-  .contenedor-info-animacion{
-    margin: 0;    
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-}
-  .contenedor-info {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-top: 1rem ;
-  }
-.contenedor-animaciones {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-top: 12px;
-}
-  footer{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box ;
-   }
-   .contenedor-contacto {
-    padding-left: 1rem;
+        position: relative;
+        padding-left: 3rem;
+    }
+    .contenedor-registro-carrito {
+        position: relative;
+        padding-right: 3rem;
+    }
+    /*main*/
+    .contenedor-info-animacion{
+        @include flex (column, center, none, 2rem, none);
+        margin: 0;    
+    }
+    .contenedor-info {
+        @include flex (column, center, none, none, none);
+        padding-top: 1rem ;
+    }
+    .contenedor-animaciones {
+        @include flex (row, center, center, none, none);
+          padding-top: 12px;
+    }
+    footer{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .contenedor-contacto {
+        padding-left: 1rem;
     }
     .contenedor-encontranos {
         padding-bottom: 1rem;
     }
-    .contenedor-face-insta {
+      .contenedor-face-insta {
         padding-right: 1rem;
     }
 }
