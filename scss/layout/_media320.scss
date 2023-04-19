@@ -38,8 +38,8 @@
     }
          /*produtos*/
     .contenedor-productos {
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
+        @include grid(repeat(2,1fr),none);
+      
     }
 
     footer {
@@ -61,10 +61,7 @@
         
     }
     .carrito-producto-compra {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: start;
+        @include flex(column, center, start, none,none);  
         background-color: rgb(220, 220, 220);
         padding: 1rem;
         padding-right: 2rem;

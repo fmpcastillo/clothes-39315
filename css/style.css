@@ -449,6 +449,8 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: start;
+    gap: none;
+    flex-wrap: none;
     background-color: gainsboro;
     padding: 1rem;
     padding-right: 2rem;
@@ -492,7 +494,8 @@ main {
   /*produtos*/
   .contenedor-productos {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); }
+    grid-template-columns: repeat(2, 1fr);
+    gap: none; }
   footer {
     margin: 0;
     padding: 0;
@@ -510,6 +513,8 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: start;
+    gap: none;
+    flex-wrap: none;
     background-color: gainsboro;
     padding: 1rem;
     padding-right: 2rem;
