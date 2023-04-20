@@ -310,13 +310,19 @@ main {
 .carrito-productos {
   display: flex;
   flex-direction: column;
+  justify-content: none;
+  align-items: none;
   gap: 1rem;
+  flex-wrap: none;
   padding-right: 1rem; }
 
 .carrito-producto-compra {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  gap: none;
+  flex-wrap: none;
   background-color: gainsboro;
   padding: 1rem;
   padding-right: 2rem;
