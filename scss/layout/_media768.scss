@@ -8,7 +8,7 @@
         padding-right: 3rem;
     }
     /*main*/
-    .contenedor-info-animacion{
+    .contenedor-info-animacion {
         @include flex (column, center, none, 2rem, none);
         margin: 0;    
     }
@@ -20,7 +20,7 @@
         @include flex (row, center, center, none, none);
           padding-top: 12px;
     }
-    footer{
+    footer {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
