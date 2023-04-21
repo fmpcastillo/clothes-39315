@@ -51,6 +51,7 @@
         padding-left: 1rem;
     }
     .contenedor-encontranos {
+        @include flex (column,none, center, 10px, none);
         padding-bottom: 1rem;
     }
     .contenedor-face-insta {

@@ -446,8 +446,6 @@ main {
     box-sizing: border-box; }
   .contenedor-contacto {
     padding-left: 1rem; }
-  .contenedor-encontranos {
-    padding-top: 1.5rem; }
   .contenedor-face-insta {
     padding-right: 1rem; }
   .carrito-producto-compra {
@@ -509,6 +507,12 @@ main {
   .contenedor-contacto {
     padding-left: 1rem; }
   .contenedor-encontranos {
+    display: flex;
+    flex-direction: column;
+    justify-content: none;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: none;
     padding-bottom: 1rem; }
   .contenedor-face-insta {
     padding-right: 1rem; }
