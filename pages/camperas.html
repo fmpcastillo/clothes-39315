@@ -17,100 +17,91 @@
 </head>
 <body>
     <header>
-        <div class="contenedor-logo" >
-            <a href="../index.html"><img src="../assets/logo-blanco.png" alt="clothes-tienda"></a>
+        <div class="contenedor-logo" class="container-fluid" >
+            <a href="../index.html"><img src="../assets/logo-blanco.png" alt="clothes tienda de ropa"></a>
         </div>
-        <div class="contenedor-header">   
-            <nav class="contenedor-barra" class="container-fluid">
-              <ul class="contenedor-menu">
-                  <li><a href="../pages/productos.html">productos</a></li>
-                  <li><a href="../pages/remeras.html">remeras</a></li>
-                  <li><a href="../pages/pantalones.html">pantalones</a></li>
-                  <li><a href="../pages/camperas.html">camperas</a></li>
-                </ul>
-            </nav>
 
-            <div class="contenedor-registro-carrito">
-                <a href="../pages/registrarse.html"><i class="bi bi-person-circle iconos" alt="registrarme"></i></a>
-                <div>
-                    <a href="../pages/carrito.html"><i class="bi bi-cart iconos" alt="carrito"></i></a>
-                    <i class="bi bi-1-circle-fill numerito"></i>
-                </div>
-            </div>
-            </div><!--fin-->
-
-            <div class="hambar"> <!--menu bootstrp-->
-                <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+        <div class="contenedor-header">
+            <div class="hambar">
+                <nav class="navbar navbar-expand-lg navbar-dark bg-black d-flex justify-content-around aling-items-center ">
                     <div class="container-fluid">
-                    
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="../pages/productos.html">Productos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="../pages/remeras.html">Remeras</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="../pages/pantalones.html">Pantalones</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="../pages/camperas.html">Camperas</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="../pages/registrarse.html"><i class="bi bi-person-circle iconos"></i></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="../pages/carrito.html"><i class="bi bi-cart iconos"></i></a>    
-                        </li>
-                        </ul>
-                    </div>
-                    </div>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse" id="navbarNav" class="d-flex  aling-items-center">
+                            <ul class="navbar-nav" >
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="../pages/productos.html">Productos</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="../pages/remeras.html">Remeras</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="../pages/pantalones.html">Pantalones</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="../pages/camperas.html">Camperas</a>
+                                </li> 
+                            </ul>
+                        </div>
+                    </div>   
                 </nav>
             </div>
+
+            <div class="contenedor-registro-carrito">
+                <span class="contenedor-registrar">
+                    <a href="../pages/registrarse.html"><i class="bi bi-person-circle iconos"></i></a>
+                </span>
+                <span class="contenedor-carro">
+                    <a href="../pages/carrito.html"><i class="bi bi-cart iconos"></i></a>
+                    <i class="bi bi-1-circle-fill numerito"></i>
+                </span>
+            </div>
+        </div>                    
     </header>
 
     <main>
       <h1 class="titulo">Camperas</h1>
         <section class="contenedor-productos">
             <div class="producto">
-                <img class="imagen-producto" src="../assets/productos-prendas/campera-dona.jpg"  alt="campera-de-jean">
+                <img class="imagen-producto" src="../assets/productos-prendas/camperas/campera-dona.jpg"  alt="campera de jean estampa de dona en el bolsillo">
                 <div class="producto-descripcion">
-                    <p class="titulo-produco">campera</p>
+                    <p class="titulo-producto">campera</p>
                     <p class="precio">$15000</p>
-                    <button  active class="boton-agregar">agregar</button>
+                    <button class="boton-agregar">agregar</button>
                 </div>
             </div>
 
             <div class="producto">
-                <img class="imagen-producto" src="../assets/productos-prendas/campera-dona.jpg"  alt="campera-de-jean">
+                <img class="imagen-producto" src="../assets/productos-prendas/camperas/camperaa-jean-degrade.jpg"  alt="campera de jean azul degrade">
                 <div class="producto-descripcion">
-                    <p class="titulo-produco">campera</p>
+                    <p class="titulo-producto">campera de jean celeste degradado</p>
                     <p class="precio">$15000</p>
-                    <button  active class="boton-agregar">agregar</button>
+                    <button class="boton-agregar">agregar</button>
                 </div>
             </div>
 
             <div class="producto">
-                <img class="imagen-producto" src="../assets/productos-prendas/campera-dona.jpg"  alt="campera-de-jean">
+                <img class="imagen-producto" src="../assets/productos-prendas/camperas/jean-azul-oscuto.jpg"  alt="campera de jean azul oscuro">
                 <div class="producto-descripcion">
-                    <p class="titulo-produco">campera</p>
+                    <p class="titulo-producto">camperade jean azul oscuro</p>
                     <p class="precio">$15000</p>
-                    <button  active class="boton-agregar">agregar</button>
+                    <button class="boton-agregar">agregar</button>
                 </div>
             </div>
 
             <div class="producto">
-                <img class="imagen-producto" src="../assets/productos-prendas/campera-dona.jpg"  alt="campera-de-jean">
+                <img class="imagen-producto" src="../assets/productos-prendas/camperas/campera-corderito.jpg"  alt="campera de jean con corderito">
                 <div class="producto-descripcion">
-                    <p class="titulo-produco">campera</p>
+                    <p class="titulo-produco">campera de jean con corderito</p>
                     <p class="precio">$15000</p>
-                    <button  active class="boton-agregar">agregar</button>
+                    <button class="boton-agregar">agregar</button>
                 </div>
-            </div>    
+            </div>
         </section><!--fin-->
     </main>
 

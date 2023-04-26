@@ -5,6 +5,10 @@
 #navbarNav li a {
   color: snow; }
 
+.iconos {
+  color: snow;
+  font-size: 20px; }
+
 * {
   margin: 0%;
   padding: 0%;
@@ -52,9 +56,6 @@
   gap: none;
   flex-wrap: none; }
 
-.hambar {
-  display: none; }
-
 .contenedor-header {
   display: flex;
   flex-direction: none;
@@ -71,8 +72,7 @@
   align-items: none;
   gap: 0.5rem;
   flex-wrap: none;
-  padding-top: .8rem;
-  padding-left: 4rem; }
+  margin: .5rem; }
   .contenedor-menu li {
     list-style: none; }
     .contenedor-menu li a {
@@ -84,8 +84,8 @@
         color: black; }
 
 .contenedor-registro-carrito {
-  padding-top: .7rem;
-  padding-right: 4rem;
+  margin: .5rem;
+  padding-right: 2rem;
   display: flex;
   flex-direction: row;
   justify-content: none;
@@ -332,12 +332,6 @@ main {
     padding-left: 1rem; }
 
 @media (max-width: 800px) and (min-width: 768px) {
-  .contenedor-barra ul {
-    position: relative;
-    padding-left: 3rem; }
-  .contenedor-registro-carrito {
-    position: relative;
-    padding-right: 3rem; }
   /*main*/
   .contenedor-info-animacion {
     display: flex;
@@ -375,12 +369,6 @@ main {
     padding-right: 1rem; } }
 
 @media (max-width: 767px) and (min-width: 601px) {
-  .contenedor-barra ul {
-    position: relative;
-    padding-left: 2rem; }
-  .contenedor-registro-carrito {
-    position: relative;
-    padding-right: 3rem; }
   /*main*/
   .contenedor-info-animacion {
     display: flex;
@@ -412,14 +400,6 @@ main {
     padding-right: 1rem; } }
 
 @media (max-width: 600px) and (min-width: 481px) {
-  .contenedor-barra ul {
-    position: relative;
-    padding-left: 2rem; }
-  .contenedor-registro-carrito {
-    position: relative;
-    padding-right: 3rem; }
-  li {
-    font-size: 14px; }
   /*main*/
   .contenedor-info-animacion {
     display: flex;
@@ -464,17 +444,6 @@ main {
       padding-left: 1rem; } }
 
 @media (max-width: 480px) and (min-width: 320px) {
-  .hambar {
-    display: inline; }
-  .contenedor-barra {
-    display: none; }
-  .contenedor-registro-carrito {
-    display: none; }
-  .contenedor-registro-carrito {
-    position: relative;
-    padding-right: 3rem; }
-  li {
-    font-size: 14px; }
   /*main*/
   .contenedor-info-animacion {
     display: flex;

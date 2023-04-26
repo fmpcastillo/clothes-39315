@@ -25,59 +25,49 @@
         <div class="contenedor-logo" class="container-fluid" >
             <a href="./index.html"><img src="./assets/logo-blanco.png" alt="clothes-tienda" ></a>
         </div>
+
         <div class="contenedor-header">
 
-            <nav class="contenedor-barra" class="container-fluid">
-              <ul class="contenedor-menu">
-                  <li><a href="./pages/productos.html">productos</a></li>
-                  <li><a href="./pages/remeras.html">remeras</a></li>
-                  <li><a href="./pages/pantalones.html">pantalones</a></li>
-                  <li><a href="./pages/camperas.html">camperas</a></li>
-                </ul>
-            </nav>
+            <div class="hambar">
+                <nav class="navbar navbar-expand-lg navbar-dark bg-black d-flex justify-content-around aling-items-center ">
+                    <div class="container-fluid">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
 
-            <div class="contenedor-registro-carrito">
-                  <a href="./pages/registrarse.html"><i class="bi bi-person-circle iconos"></i></a>
-                <div>
-                  <a href="./pages/carrito.html"><i class="bi bi-cart iconos"></i></a>
-                  <i class="bi bi-1-circle-fill numerito"></i>
-                </div>
+                        <div class="collapse navbar-collapse" id="navbarNav" class="d-flex  aling-items-center">
+                            <ul class="navbar-nav" >
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="./pages/productos.html">Productos</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./pages/remeras.html">Remeras</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./pages/pantalones.html">Pantalones</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./pages/camperas.html">Camperas</a>
+                                </li> 
+                            </ul>
+                        </div>
+                    </div>       
+                </nav>
             </div>
 
-        </div><!--fin-->
-
-        <div class="hambar"> <!--menu bootstrp-->
-          <nav class="navbar navbar-expand-lg navbar-dark bg-black">
-              <div class="container-fluid">
-              
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNav">
-                  <ul class="navbar-nav">
-                  <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="./pages/productos.html">Productos</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="./pages/remeras.html">Remeras</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="./pages/pantalones.html">Pantalones</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="./pages/camperas.html">Camperas</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="./pages/registrarse.html"><i class="bi bi-person-circle iconos"></i></a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="./pages/carrito.html"><i class="bi bi-cart iconos"></i></a>  
-                  </li>
-                  </ul>
-              </div>
-              </div>
-          </nav>
-      </div>
+            <div class="contenedor-registro-carrito">
+                <span class="contenedor-registrar">
+                    <a href="./pages/registrarse.html"><i class="bi bi-person-circle iconos"></i></a>
+                </span>
+                <span class="contenedor-carro">
+                    <a href="./pages/carrito.html"><i class="bi bi-cart iconos"></i></a>
+                    <i class="bi bi-1-circle-fill numerito"></i>
+                </span>
+            </div>
+        </div>
     </header>
 
     <main>
@@ -88,17 +78,21 @@
               <div class="carousel-item active">
                 <img src="./assets/carrusel/remeras.jpg" class="rounded mx-auto  d-block w-75" alt="...">
               </div>
+
               <div class="carousel-item">
                 <img src="./assets/carrusel/jean.jpg" class="rounded mx-auto d-block w-75" alt="...">
               </div>
+
               <div class="carousel-item">
                 <img src="./assets/carrusel/camperas.jpg" class="rounded mx-auto d-block w-75" alt="...">
               </div>
             </div>
+
             <button class="carousel-control-prev" type="button" data-bs-target="#car" data-bs-slide="prev">
               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
               <span class="visually-hidden">Previous</span>
             </button>
+
             <button class="carousel-control-next" type="button" data-bs-target="#car" data-bs-slide="next">
               <span class="carousel-control-next-icon" aria-hidden="true"></span>
               <span class="visually-hidden">Next</span>
@@ -108,7 +102,7 @@
         </div><!--fin-->
 
         <div class="contenedor-info-animacion">
-            <article class="contenedor-info">pwd
+            <article class="contenedor-info">
                 <p><strong>ENVIÓS GRATIS</strong> <br>Para compras desde $10000</p>
                 <p><strong>Moto Mensajeria llega en el día</strong><br>Lunes a Sábado comprando antes de las 13:00 hs <br>CABA / Zona Oeste / Zona Sur / Zona Norte. </p>
                 <p><strong>Correo OCA llega en 2 - 4 días hábiles</strong> <br>A tú domicilio o sucursal.</p>  
@@ -116,11 +110,11 @@
                 <p><strong>FACILIDADES DE PAGO</strong> <br> <strong> 3 y 6 Cuotas sin Interés</strong> <br> <strong>10% OFF</strong> <br>Efectivo, transferencia o depósito.</p>
                 <p><strong>CAMBIOS Y DEVOLUCIONES</strong> <br>Cambios de modelo, talle o color. <br>Devoluciones si te arrepentiste de tu compra.</p>
             </article>
+
             <div class="contenedor-animaciones">
-                <img class="imagen" src="./assets/productos-prendas/jean.jpg" alt="banner">
+                <img class="imagen" src="./assets/productos-prendas/jeans/jean.jpg" alt="banner">
             </div>  
-        </div>
-     
+        </div>    
     </main>
 
     <footer>

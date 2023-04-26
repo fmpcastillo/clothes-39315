@@ -1,21 +1,5 @@
-@media (max-width: 480px) and (min-width: 320px){
-  
-    .hambar {
-        display:inline;
-    }
-    .contenedor-barra { 
-        display: none;
-    }
-    .contenedor-registro-carrito {
-        display: none;
-    }
-    .contenedor-registro-carrito {
-        position: relative;
-        padding-right: 3rem;
-    }
-    li{
-        font-size: 14px;
-    }
+@media (max-width: 480px) and (min-width: 320px) {
+
       /*main*/
     .contenedor-info-animacion {
         @include flex (column, none, none, 1rem, none); 
@@ -36,11 +20,13 @@
     .contenedor-animaciones {
         padding: 0;
     }
+
+
          /*produtos*/
     .contenedor-productos {
-        @include grid(repeat(2,1fr),none);
-      
+        @include grid(repeat(2,1fr),none);  
     }
+
 
     footer {
       margin: 0;
@@ -61,6 +47,8 @@
         padding-left: 2rem;
         
     }
+
+
     .carrito-producto-compra {
         @include flex(column, center, start, none,none);  
         background-color: rgb(220, 220, 220);

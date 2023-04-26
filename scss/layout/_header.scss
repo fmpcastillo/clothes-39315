@@ -6,20 +6,16 @@
     padding-top: 2rem;
     @include flex (none, center, none, none, none);
 }
-.hambar {
-    display: none;
-}
+
 
 .contenedor-header {
     @include flex (none,space-between,none, none, none);
-   background-color: black;
-    
+    background-color: black;
 }
 
 .contenedor-menu {
     @include flex (row,none,none, .5rem, none);
-    padding-top: .8rem;
-    padding-left: 4rem;
+   margin: .5rem;
     li{
         list-style: none; 
         a{
@@ -34,14 +30,16 @@
     }
 }
 .contenedor-registro-carrito {
-    padding-top: .7rem;
-    padding-right: 4rem; 
+   margin: .5rem;
+   padding-right: 2rem;
+     
     @include flex (row, none, none, 2rem, none);
     .iconos{
         color: snow;
         font-size: 20px;
    }
 }
+
 .numerito {
     color: snow;
     font-size: 12px;

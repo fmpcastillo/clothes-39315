@@ -16,91 +16,84 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
 </head>
 <body>
-    <header> 
-        <div class="contenedor-logo" >
-            <a href="../index.html"><img src="../assets/logo-blanco.png" alt="clothes-tienda"></a>
+    <header>
+        <div class="contenedor-logo" class="container-fluid">
+            <a href="../index.html"><img src="../assets/logo-blanco.png" alt="clothes tienda de ropa"></a>
         </div>
+
         <div class="contenedor-header">
-            <nav class="contenedor-barra" class="container-fluid">
-            <ul class="contenedor-menu">
-                <li><a href="../pages/productos.html">productos</a></li>
-                <li><a href="../pages/remeras.html">remeras</a></li>
-                <li><a href="../pages/pantalones.html">pantalones</a></li>
-                <li><a href="../pages/camperas.html">camperas</a></li>
-                </ul>
-            </nav>
+            <div class="hambar">
+                <nav class="navbar navbar-expand-lg navbar-dark bg-black d-flex justify-content-around aling-items-center ">
+                    <div class="container-fluid">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse" id="navbarNav" class="d-flex  aling-items-center">
+                            <ul class="navbar-nav" >
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="../pages/productos.html">Productos</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="../pages/remeras.html">Remeras</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="../pages/pantalones.html">Pantalones</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="../pages/camperas.html">Camperas</a>
+                                </li> 
+                            </ul>
+                        </div>
+                    </div>       
+                </nav>
+            </div>
 
             <div class="contenedor-registro-carrito">
-                <a href="../pages/registrarse.html"><i class="bi bi-person-circle iconos"></i></a>
-                <div>
+                <span class="contenedor-registrar">
+                    <a href="../pages/registrarse.html"><i class="bi bi-person-circle iconos"></i></a>
+                </span>
+                <span class="contenedor-carro">
                     <a href="../pages/carrito.html"><i class="bi bi-cart iconos"></i></a>
                     <i class="bi bi-1-circle-fill numerito"></i>
-                </div>
+                </span>
             </div>
-            
-        </div>
-
-        <div class="hambar"> <!--menu bootstrp-->
-            <nav class="navbar navbar-expand-lg navbar-dark bg-black">
-                <div class="container-fluid">
-                
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="../pages/productos.html">Productos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../pages/remeras.html">Remeras</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../pages/pantalones.html">Pantalones</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../pages/camperas.html">Camperas</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../pages/registrarse.html"><i class="bi bi-person-circle iconos"></i></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../pages/carrito.html"><i class="bi bi-cart iconos"></i></a>    
-                    </li>
-                    
-                    </ul>
-                </div>
-                </div>
-            </nav>
-        </div>
+        </div>       
     </header>
 
     <main>
         <p class="titulo-form">registrarme</p>
-            <div class="contenedor-formulario">
-                    <form action="" method="">
-                        <label class="intro-nombre" for="nombre">
-                            <span>Nombre:</span>
-                            <input type="text" id="nombre" placeholder="Nombre y Apellido">
-                        </label>
-                        <label class="intro-mail" for="mail">
-                            <span>Mail:</span>
-                            <input type="text" id="mail" placeholder="mail@example.com">
-                        </label>
-                        <label for="telefono" class="intro-telefono">
-                            <span>Telefono:</span>
-                            <input type="text" id="telefono" placeholder="+54 001 000 000">
-                        </label>
-                        <label class="intro-contraseña" for="contraseña">
-                            <span>Contraseña:</span>
-                            <input type="password" id="contraseña" placeholder="Contraseña">
-                        </label>   
-                    </form>
-                    <div class="boton-registrarme">
-                        <input type="submit" value="Registrarme"></button>
-                    </div>
-            </form>
-            </div><!--fin formmulario-->
+        
+        <div class="contenedor-formulario">
+            <form action="" method="">
+                <label class="intro-nombre" for="nombre">
+                    <span>Nombre:</span>
+                    <input type="text" id="nombre" placeholder="Nombre y Apellido">
+                </label>
+
+                <label class="intro-mail" for="mail">
+                    <span>Mail:</span>
+                    <input type="text" id="mail" placeholder="mail@example.com">
+                </label>
+
+                <label for="telefono" class="intro-telefono">
+                    <span>Telefono:</span>
+                    <input type="text" id="telefono" placeholder="+54 001 000 000">
+                </label>
+
+                <label class="intro-contraseña" for="contraseña">
+                    <span>Contraseña:</span>
+                    <input type="password" id="contraseña" placeholder="Contraseña">
+                </label>   
+            
+                <div class="boton-registrarme">
+                    <input type="submit" value="Registrarme"></button>
+                </div>
+            </form>   
+        </div>
     </main>
 
     <footer>

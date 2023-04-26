@@ -1,15 +1,5 @@
-@media (max-width: 600px) and (min-width: 481px){
-    .contenedor-barra ul {
-          position: relative;
-          padding-left: 2rem;
-    }
-    .contenedor-registro-carrito {
-        position: relative;
-        padding-right: 3rem;
-    }
-    li {
-        font-size: 14px;
-    }
+@media (max-width: 600px) and (min-width: 481px) {
+   
     /*main*/
     .contenedor-info-animacion {
         @include flex (column, none, none, 1rem, none);
