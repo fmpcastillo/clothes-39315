@@ -13,17 +13,17 @@
 
 .intro-telefono {
     @include flex(column, none, none, none, none);
-
 }
 
 .intro-mail {
     @include flex(column, none, none, none, none);
 }
+
 .intro-mensaje {
     @include flex(column, none, none, none, none);
     input {
         padding: 3rem;
-        }
+    }
 }
 
 .dejar-mensaje {

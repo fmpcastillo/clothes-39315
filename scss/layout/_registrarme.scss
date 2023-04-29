@@ -2,9 +2,11 @@
     padding-left: 3rem;
     padding-right: 3rem;
 }
+
 .intro-contraseña {
     @include flex(column, none, none, none, none);
 }
+
 .boton-registrarme {
     padding-top: 1rem;
     @include flex(row, center, none, none, none);

@@ -1,35 +1,40 @@
 @media (max-width: 767px) and (min-width: 601px) {
 
-    
     /*main*/
     .contenedor-info-animacion {
         @include flex (column, none, none, 2rem, none);
         margin: 0%;
         padding: 1rem;
     }
+
     .contenedor-info {
       padding: 0;
     }
+
     .contenedor-animaciones{
         padding-left: 3rem;
-    }  
+    }
+
     /*productos*/
     .contenedor-productos {
         @include grid (repeat (2,1fr), none);
     }
+
     footer {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
     }
+
     .contenedor-contacto {
         padding-left: 1rem;
     }
+
     .contenedor-encontranos {
         padding-bottom: 1rem;
     }
+
     .contenedor-face-insta {
         padding-right: 1rem;
     }
-
 }

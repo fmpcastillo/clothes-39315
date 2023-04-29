@@ -1,54 +1,57 @@
 @media (max-width: 480px) and (min-width: 320px) {
-
-      /*main*/
+    /*main*/
     .contenedor-info-animacion {
         @include flex (column, none, none, 1rem, none); 
         padding: 1rem;
     }
+
     .contenedor-info {
         margin-top: 20px;
         padding: 0px;
     }
+
     p{
         font-size: 14px;
         line-height: 1rem;
     }
+
     .imagen{
         height: 150px;
         width: 300px;
     }
+
     .contenedor-animaciones {
         padding: 0;
     }
 
-
-         /*produtos*/
+    /*produtos*/
     .contenedor-productos {
         @include grid(repeat(2,1fr),none);  
     }
-
 
     footer {
       margin: 0;
       padding: 0;
       box-sizing: border-box ;
     }
+
     .contenedor-contacto {
         padding-left: 1rem;
     }
+
     .contenedor-encontranos {
         @include flex (column,none, center, 10px, none);
         padding-bottom: 1rem;
     }
+
     .contenedor-face-insta {
         padding-right: 1rem;
     }
+
     .contenedor-formulario-contacto {
-        padding-left: 2rem;
-        
+        padding-left: 2rem;    
     }
-
-
+    
     .carrito-producto-compra {
         @include flex(column, center, start, none,none);  
         background-color: rgb(220, 220, 220);
@@ -59,7 +62,5 @@
             max-width: 6rem;
             padding-left: 1rem;
         }
-    
-    }
-      
+    }    
 }

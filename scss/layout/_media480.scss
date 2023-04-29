@@ -1,5 +1,4 @@
 @media (max-width: 600px) and (min-width: 481px) {
-   
     /*main*/
     .contenedor-info-animacion {
         @include flex (column, none, none, 1rem, none);
@@ -42,6 +41,5 @@
             max-width: 6rem;
             padding-left: 1rem;
         }
-    
     }
 }
